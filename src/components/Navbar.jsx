@@ -37,7 +37,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <button className="bg-primary max-h-10 rounded-lg text-center my-auto text-lg lg:text-2xl text-white pt-1 pb-2 px-4 font-medium">
+      <button className="bg-gradient-to-r from-blue-500 to-purple-500 max-h-10 rounded-lg text-center my-auto text-lg lg:text-2xl text-white pt-1 pb-2 px-4 font-medium">
         Start Applying
       </button>
     </div>
