@@ -14,8 +14,8 @@ const Job = ({ props }) => {
         <button className="btn btn-outline btn-primary text-xl font-medium">{jobtime}</button>
       </div>
       <div className="lg:flex gap-4 my-4 pt-4 text-xl text-gray-500">
-        <p className="flex gap-2"><MapPinIcon className="h-6 w-6 text text-gray-300" />{address}</p>
-        <p className="flex gap-2 my-4 lg:my-0"><CurrencyDollarIcon className="h-6 w-6 text text-gray-400" />{salary}</p>
+        <p className="flex gap-2 items-center"><MapPinIcon className="h-6 w-6 text text-gray-300" /><span>{address}</span></p>
+        <p className="flex gap-2 my-4 lg:my-0 items-center"><CurrencyDollarIcon className="h-6 w-6 text text-gray-400" /><span>{salary}</span></p>
       </div>
       <button className="bg-gradient-to-r from-blue-500 mt-auto to-purple-500 text-white py-2 px-4 rounded-md text-xl font-medium w-44">View Details</button>
     </div>
