@@ -1,32 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, useLoaderData } from "react-router-dom";
 import Home from "./components/Home";
-import Banner from "./components/Banner";
 import Statistics from "./components/Statistics";
 import Applied from "./components/Applied";
 import Blog from "./components/Blog";
+import Jobcategory from "./components/Jobcategory";
+import Root from "./components/Root";
+import Featuresjob from "./components/Featuresjob";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home></Home>,
+    path:"/",
+    element:<Root></Root>,
     children: [
-      { path: "/", 
-      element: <Banner></Banner> },
       {
         path: "statistics",
         element: <Statistics></Statistics>,
       },
       {
+        path:"/",
+        element: <Featuresjob></Featuresjob>,
+      },
+      {
         path: "/blog",
-        element: <Blog></Blog>
+        element: <Blog></Blog>,
       },
       {
         path: "/applied",
-        element: <Applied></Applied>
-      }
+        element: <Applied></Applied>,
+      },
     ],
   },
 ]);
