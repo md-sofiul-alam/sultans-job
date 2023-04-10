@@ -5,8 +5,8 @@ const Job = ({ props }) => {
   const { address, companyname, icon, id, jobname, jobtime, jobtype, salary } =
     props;
   return (
-    <div className="border rounded-lg p-10">
-      <img className="max-h-20 w-1/3 my-4" src={icon} alt="" />
+    <div className="border rounded-xl bg-blue-50 p-10">
+      <img className="max-h-20 w-1/3 my-4 rounded-lg" src={icon} alt="" />
       <h1 className="text-2xl font-bold">{jobname}</h1>
       <h1 className="text-2xl font-bold my-4 text-gray-400">{companyname}</h1>
       <div className="flex gap-6">

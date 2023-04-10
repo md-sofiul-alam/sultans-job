@@ -21,7 +21,7 @@ const Jobcategory = () => {
           need. Its your future
         </p>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-4 mt-8 mx-auto justify-between p-6 gap-6 lg:pl-16">
+      <div className="grid grid-cols-2 lg:grid-cols-4 mt-4 mx-auto justify-between p-6 gap-6 lg:pl-16">
         {
             datas.map(data=><CatagorisedJob key={data.id} data={data}></CatagorisedJob>)
         }
