@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link to={"/applied"}>Applied Jobs</Link>
         <Link to={"/blog"}>Blog</Link>
       </div>
-      <div className="flex lg:hidden flex-col justify-center absolute left-4 top-2">
+      <div className="flex lg:hidden flex-col justify-center absolute left-2 top-2">
         <Bars3Icon
           className={`w-6 h-6 ${!open && "hidden"}`}
           onClick={isOpen}
@@ -29,7 +29,7 @@ const Navbar = () => {
           onClick={isOpen}
         ></XMarkIcon>
         {!open && (
-          <div className="flex flex-col align-middle text-lg mt-3 absolute -left-7 top-4 bg-blue-800 rounded-md text-white p-2 font-semibold">
+          <div className="flex flex-col align-middle text-lg mt-3 absolute -left-2 top-4 bg-blue-500 rounded-md text-white p-2 font-semibold">
             <Link to={"/"}>Home</Link>
             <Link to={"/statistics"}>Statistics</Link>
             <Link to={"/applied"}>Applied</Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-      <button className="bg-primary max-h-10 rounded-lg text-lg lg:text-2xl text-white py-2 px-4 font-medium">
+      <button className="bg-primary max-h-10 rounded-lg text-center my-auto text-lg lg:text-2xl text-white pt-1 pb-2 px-4 font-medium">
         Start Applying
       </button>
     </div>
