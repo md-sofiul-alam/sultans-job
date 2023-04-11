@@ -14,10 +14,10 @@ const Navbar = () => {
         Sultan<span className="text-blue-500">Job</span>
       </NavLink>
       <div className="hidden lg:flex gap-6 align-middle text-2xl font-semibold">
-        <NavLink className={({isActive})=> isActive && "text-blue-700 font-semibold"} to={"/"}>Home</NavLink>
-        <NavLink className={({isActive})=> isActive && "text-blue-700 font-semibold"} to={"/statistics"}>Statistics</NavLink>
-        <NavLink className={({isActive})=> isActive && "text-blue-700 font-semibold"} to={"/applied"}>Applied Jobs</NavLink>
-        <NavLink className={({isActive})=> isActive && "text-blue-700 font-semibold"} to={"/blog"}>Blog</NavLink>
+        <NavLink className={({isActive})=> isActive ? "text-blue-700 font-semibold": ''} to={"/"}>Home</NavLink>
+        <NavLink className={({isActive})=> isActive ? "text-blue-700 font-semibold": ''} to={"/statistics"}>Statistics</NavLink>
+        <NavLink className={({isActive})=> isActive ? "text-blue-700 font-semibold": ''} to={"/applied"}>Applied Jobs</NavLink>
+        <NavLink className={({isActive})=> isActive ? "text-blue-700 font-semibold": ''} to={"/blog"}>Blog</NavLink>
       </div>
       <div className="flex lg:hidden flex-col justify-center absolute left-2 top-2">
         <Bars3Icon

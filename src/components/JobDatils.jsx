@@ -1,9 +1,9 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 
 const JobDatils = () => {
-    const jobDetailsData =useParams();
-    console.log(jobDetailsData)
+    const jobDetailsData = useLoaderData();
+    console.log(jobDetailsData);
     return (
         <div>
             

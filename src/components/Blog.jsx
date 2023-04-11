@@ -2,9 +2,9 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto p-6">
         <h1 className="text-center text-3xl bg-blue-100 rounded-lg font-bold mt-10 p-6 text-blue-700 container mx-auto">Blog Page</h1>
-      <div className="container bg-blue-50 mx-auto p-10 my-6 rounded-xl">
+      <div className="container bg-blue-50 mx-auto p-6 my-6 rounded-xl">
         <h1 className="text-2xl font-semibold my-4 text-blue-600">when to use context API?</h1>
         <p className="text-xl text-gray-800">
           The Context API in React is used for sharing data between components
