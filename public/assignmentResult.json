@@ -1,0 +1,37 @@
+[
+    {
+      "subject": "A-1",
+      "A": 56,
+      "fullMark": 60
+    },
+    {
+      "subject": "A-2",
+      "A": 60,
+      "fullMark": 60
+    },
+    {
+      "subject": "A-3",
+      "A": 60,
+      "fullMark": 60
+    },
+    {
+      "subject": "A-4",
+      "A": 60,
+      "fullMark": 60
+    },
+    {
+      "subject": "A-5",
+      "A": 59,
+      "fullMark": 60
+    },
+    {
+      "subject": "A-6",
+      "A": 60,
+      "fullMark": 60
+    },
+    {
+      "subject": "A-7",
+      "A": 60,
+      "fullMark": 60
+    }
+  ]

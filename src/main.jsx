@@ -9,6 +9,7 @@ import Blog from "./components/Blog";
 
 import Root from "./components/Root";
 import Error from "./components/Error";
+import JobDatils from "./components/JobDatils";
 
 
 const router = createBrowserRouter([
@@ -19,11 +20,12 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics></Statistics>,
+        loader: ()=>fetch('/assignmentResult.json')
       },
       {
         path:"/",
         element: <Home></Home>,
-        loader: ()=>fetch('featuredjob.json'),
+        loader: ()=>fetch('/featuredjob.json'),
       },
       {
         path: "/blog",
@@ -32,11 +34,17 @@ const router = createBrowserRouter([
       {
         path: "/applied",
         element: <Applied></Applied>,
+        loader: ()=>fetch('/featuredjob.json')
       },
       {
         path: "*",
         element: <Error></Error>,
       },
+      {
+        path: "/jobDetails",
+        element: <JobDatils></JobDatils>,
+        loader: (params)=> fetch('/featuredjob.json'),
+      }
     ],
   },
 ]);

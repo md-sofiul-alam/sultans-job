@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
 const Navbar = () => {
@@ -7,17 +7,17 @@ const Navbar = () => {
   const isOpen = () => setOpen(!open);
   return (
     <div className="container flex justify-between align-middle mt-6 w-11/12 mx-auto relative">
-      <Link
+      <NavLink
         to={"/"}
         className="text-2xl lg:text-4xl ml-14 lg:ml-0 font-semibold text-blue-300"
       >
         Sultan<span className="text-blue-500">Job</span>
-      </Link>
+      </NavLink>
       <div className="hidden lg:flex gap-6 align-middle text-2xl font-semibold">
-        <Link to={"/"}>Home</Link>
-        <Link to={"/statistics"}>Statistics</Link>
-        <Link to={"/applied"}>Applied Jobs</Link>
-        <Link to={"/blog"}>Blog</Link>
+        <NavLink className={({isActive})=> isActive && "text-blue-700 font-semibold"} to={"/"}>Home</NavLink>
+        <NavLink className={({isActive})=> isActive && "text-blue-700 font-semibold"} to={"/statistics"}>Statistics</NavLink>
+        <NavLink className={({isActive})=> isActive && "text-blue-700 font-semibold"} to={"/applied"}>Applied Jobs</NavLink>
+        <NavLink className={({isActive})=> isActive && "text-blue-700 font-semibold"} to={"/blog"}>Blog</NavLink>
       </div>
       <div className="flex lg:hidden flex-col justify-center absolute left-2 top-2">
         <Bars3Icon
@@ -30,10 +30,10 @@ const Navbar = () => {
         ></XMarkIcon>
         {!open && (
           <div className="flex flex-col align-middle text-lg mt-3 absolute -left-2 top-4 bg-blue-500 rounded-md text-white p-2 font-semibold">
-            <Link to={"/"}>Home</Link>
-            <Link to={"/statistics"}>Statistics</Link>
-            <Link to={"/applied"}>Applied</Link>
-            <Link to={"/blog"}>Blog</Link>
+            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to={"/statistics"}>Statistics</NavLink>
+            <NavLink to={"/applied"}>Applied</NavLink>
+            <NavLink to={"/blog"}>Blog</NavLink>
           </div>
         )}
       </div>

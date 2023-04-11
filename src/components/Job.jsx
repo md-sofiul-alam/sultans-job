@@ -1,9 +1,11 @@
 import React from "react";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
+import { NavLink } from "react-router-dom";
 
 const Job = ({ props }) => {
   const { address, companyname, icon, id, jobname, jobtime, jobtype, salary } =
     props;
+    
   return (
     <div className="border rounded-xl bg-blue-50 p-6 flex flex-col">
       <img className="max-h-20 w-1/3 my-4 rounded-lg" src={icon} alt="" />
@@ -17,7 +19,7 @@ const Job = ({ props }) => {
         <p className="flex gap-2 items-center"><MapPinIcon className="h-6 w-6 text text-gray-300" /><span>{address}</span></p>
         <p className="flex gap-2 my-4 lg:my-0 items-center"><CurrencyDollarIcon className="h-6 w-6 text text-gray-400" /><span>{salary}</span></p>
       </div>
-      <button className="bg-gradient-to-r from-blue-500 mt-auto to-purple-500 text-white py-2 px-4 rounded-md text-xl font-medium w-44">View Details</button>
+      <NavLink to={"/jobDetails"} className="bg-gradient-to-r from-blue-500 mt-auto to-purple-500 text-white py-2 px-4 rounded-md text-xl font-medium w-44">View Details</NavLink>
     </div>
   );
 };
