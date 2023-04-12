@@ -13,7 +13,7 @@ const Statistics = () => {
   const chartsData = useLoaderData();
   return (
     <div className="container mx-auto mt-10 flex flex-col gap-6 justify-center">
-        <h1 className="text-3xl bg-blue-100 text-blue-800 text-center">Statistics of Assign results  </h1>
+        <h1 className="text-3xl bg-blue-100 text-blue-800 text-center py-24 rounded-xl">Statistics of Assign results  </h1>
       <div className="container mx-auto mt-10 flex flex-col gap-6 ">
         <RadarChart className="text-xl font-semibold mx-auto" outerRadius={90} width={250} height={270} data={chartsData}>
           <PolarGrid />
