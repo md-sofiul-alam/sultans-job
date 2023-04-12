@@ -6,9 +6,8 @@ import AppliedJob from "./AppliedJob";
 const Applied = () => {
   const loadedData = useLoaderData();
   const [appliedJobData, setAppliedJobData] = useState([]);
-
+  const storedappliedJobData = getAppliedJob();
   useEffect(() => {
-    const storedappliedJobData = getAppliedJob();
     const appliedJob = [];
     for (const id in storedappliedJobData) {
       const addedJob = loadedData.find((job) => job.id === id);
@@ -20,7 +19,6 @@ const Applied = () => {
 
   }, []);
   const sortByOnsite = () => {
-    const storedappliedJobData = getAppliedJob();
     const appliedJob = [];
     for (const id in storedappliedJobData) {
       const addedJob = loadedData.find((job) => job.id === id);
@@ -33,7 +31,6 @@ const Applied = () => {
     
   };
   const sortByRemote = () => {
-    const storedappliedJobData = getAppliedJob();
     const appliedJob = [];
     for (const id in storedappliedJobData) {
       const addedJob = loadedData.find((job) => job.id === id);
