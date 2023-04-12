@@ -6,8 +6,8 @@ const AppliedJob = ({ props }) => {
   const { address, companyname, icon, id, jobname, jobtime, jobtype, salary } =
     props;
   return (
-    <div className="container mx-auto flex gap-8 justify-between items-center border rounded-lg p-6 mt-7">
-      <div className="flex gap-10 items-center">
+    <div className="container mx-auto lg:flex gap-8 justify-between items-center border rounded-lg p-6 mt-7">
+      <div className="lg:flex gap-10 items-center">
         <div>
           <img className="my-4 w-48 rounded-lg " src={icon} alt="" />
         </div>
@@ -31,7 +31,7 @@ const AppliedJob = ({ props }) => {
             </p>
             <p className="flex gap-2 my-4 lg:my-0 items-center">
               <CurrencyDollarIcon className="h-6 w-6 text text-gray-400" />
-              <span>{salary}</span>
+              <span>Salary: {salary}</span>
             </p>
           </div>
         </div>

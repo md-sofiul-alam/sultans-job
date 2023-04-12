@@ -17,7 +17,7 @@ const Job = ({ props }) => {
       </div>
       <div className="lg:flex gap-4 my-4 pt-4 text-xl text-gray-500">
         <p className="flex gap-2 items-center"><MapPinIcon className="h-6 w-6 text text-gray-300" /><span>{address}</span></p>
-        <p className="flex gap-2 my-4 lg:my-0 items-center"><CurrencyDollarIcon className="h-6 w-6 text text-gray-400" /><span>{salary}</span></p>
+        <p className="flex gap-2 my-4 lg:my-0 items-center"><CurrencyDollarIcon className="h-6 w-6 text text-gray-400" /><span>Salary: {salary}</span></p>
       </div>
       <NavLink to={`../jobDetails/${id}`} className="bg-gradient-to-r from-blue-500 mt-auto to-purple-500 text-white py-2 px-4 rounded-md text-xl font-medium w-44">View Details</NavLink>
     </div>
