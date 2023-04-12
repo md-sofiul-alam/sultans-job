@@ -16,7 +16,7 @@ const Featuresjob = ({props}) => {
 
             </div>
             <div className='flex justify-center'>
-            <button className={`bg-gradient-to-r from-blue-500 to-purple-500 text-xl py-2 px-4 rounded-md mx-auto text-white ${more && "hidden"}`} onClick={seeMore}>See More</button>
+            <button className={`bg-gradient-to-r from-blue-500 to-purple-500 text-xl py-2 px-4 rounded-md mx-auto text-white ${more && "hidden"}`} onClick={seeMore}>See All</button>
             </div>
         </div>
     );
