@@ -43,8 +43,8 @@ const Applied = () => {
   };
   return (
     <div className="container relative mx-auto">
-      <h1 className="text-3xl font-bold bg-blue-100 text-blue-800 text-center mt-10 py-24 content-center">
-        Job Details
+      <h1 className="text-3xl font-bold bg-blue-100 text-blue-800 text-center mt-10 py-16 content-center">
+        Applied Job Data
       </h1>
       <div className="mt-10 flex justify-end mr-6 gap-6">
         <button className="btn bg-gradient-to-r from-blue-500 to-purple-500" onClick={sortByOnsite}>

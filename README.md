@@ -1,7 +1,7 @@
 
 # Project Title
 
-This project is for a job online job market or can be eedited to any recruitment.
+This project is for a online-job market or can be eedited to any recruitment.
 
 
 ## 🔗 Live site Links
