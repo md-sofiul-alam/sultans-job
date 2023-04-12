@@ -28,7 +28,6 @@ const Applied = () => {
         setAppliedJobData(filterByOnsite);
       } 
     }
-    
   };
   const sortByRemote = () => {
     const appliedJob = [];
