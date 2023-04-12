@@ -9,13 +9,13 @@ const addToDb = id => {
     localStorage.setItem('applied-job', JSON.stringify(appliedJob));
 }
 const getAppliedJob = () => {
-    let shoppingCart = {};
+    let appliedJob = {};
     //get the shopping cart from local storage
     const storedCart = localStorage.getItem('applied-job');
     if (storedCart) {
-        shoppingCart = JSON.parse(storedCart);
+        appliedJob = JSON.parse(storedCart);
     }
-    return shoppingCart;
+    return appliedJob;
 }
 
 

@@ -15,7 +15,6 @@ const JobDatils = () => {
   const jobDetailsData = useLoaderData();
   const { id } = useParams();
   const loadDetails = jobDetailsData.find((object) => object.id === id);
-  console.log(id)
   const {
     address,
     educationalRequirements,
